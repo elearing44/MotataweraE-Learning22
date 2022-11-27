@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MotataweraE-Learning</string>
+    <string name="book_type">book_type</string>
+    <string name="description">Description</string>
+    <string name="bookname">BookName</string>
+    <string name="videos">Videos</string>
+    <string name="books">Books</string>
+
+    <string-array name="subject_name">
+        <item>Network</item>
+        <item>SupportSystem</item>
+        <item>Android</item>
+        <item>DataBase</item>
+
+    </string-array>
+</resources>

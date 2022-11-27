@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SplashActivity"
+    android:background="@drawable/splash2">
+
+    <ImageView
+        android:id="@+id/splash_im_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_120sdp"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+
+android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_160sdp"
+        android:id="@+id/splash_ll_aen_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_55sdp"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/_3sdp"
+        android:paddingLeft="@dimen/_3sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_weight="1"
+
+            android:orientation="horizontal"
+
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <FrameLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    >
+
+                    <ImageView
+
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        app:srcCompat="@drawable/background_d1" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right|top"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        app:srcCompat="@drawable/d1" />
+                </FrameLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0">
+
+                    <ImageView
+                        android:id="@+id/splash_iv_background_d2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/background_d1" />
+
+                    <ImageView
+                        android:id="@+id/splash_iv_d2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right|top"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        app:srcCompat="@drawable/d1" />
+                </FrameLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/splash_iv_takea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_41sdp"
+          app:srcCompat="@drawable/takea"
+        android:layout_alignStart="@id/splash_im_logo"
+        android:layout_alignEnd="@id/splash_im_logo"
+         android:layout_marginTop="@dimen/_55sdp"/>
+
+    <ImageView
+        android:id="@+id/splash_iv_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          app:srcCompat="@drawable/t"
+        android:layout_below="@id/splash_ll_aen_all"
+        android:layout_centerHorizontal="true"
+      />
+
+    <TextView
+        android:id="@+id/splash_tv_app_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MotataweraE-Learning"
+        android:textSize="@dimen/_30ssp"
+        android:textStyle="italic"
+        android:textColor="#12B9F8"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_150sdp"
+        />
+  </RelativeLayout>

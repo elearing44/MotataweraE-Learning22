@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp">
+            <VideoView
+                android:id="@+id/design_video_vdo_matereal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            >
+            <TextView
+                android:id="@+id/design_vide_tv_videoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اسم الفديو"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/design_vide_tv_videoSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="حجم الفديو"
+                android:textSize="22sp"
+                />
+            <TextView
+                android:id="@+id/design_vide_tv_materealName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اسم الماده"
+                android:background="#D9D9D9"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
